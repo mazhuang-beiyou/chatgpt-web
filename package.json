@@ -3,7 +3,7 @@
   "version": "2.10.8",
   "private": false,
   "description": "ChatGPT Web",
-  "author": "ChenZhaoYu <chenzhaoyu1994@gmail.com>",
+  "author": "zhaoxingyu <zhaoxingyu19931209@gmail.com>",
   "keywords": [
     "chatgpt-web",
     "chatgpt",
@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "dev": "vite",
+    "serve": "esno ./service/src/index.ts",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",

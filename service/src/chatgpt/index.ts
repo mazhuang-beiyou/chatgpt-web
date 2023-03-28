@@ -135,7 +135,7 @@ async function fetchBalance() {
 
   try {
     const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_API_KEY}` }
-    const response = await axios.get(`${API_BASE_URL}/dashboard/billing/credit_grants`, { headers })
+    const response = await axios.get(`${API_BASE_URL}/v1/chat/completions`, { headers })
     const balance = response.data.total_available ?? 0
     return Promise.resolve(balance.toFixed(3))
   }
